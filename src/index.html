@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1 id="title">Online Mood Ring</h1>
+    <form id="feelingsForm">
+      <fieldset>
+        <legend>
+          How are your feels?
+        </legend>
+        <label>
+          <input type="radio" class="inline" name="mood" value="Most Happy" />
+          Most Happy
+        </label>
+        <label>
+          <input type="radio" class="inline" name="mood" value="Semi Happy" />
+          Semi Happy
+        </label>
+        <label>
+          <input type="radio" class="inline" name="mood" value="Less Happy" />
+          Less Happy
+        </label>
+        <label>
+          <input type="radio" class="inline" name="mood" value="Totally Mid" />
+          Totally Mid
+        </label>
+        <label>
+          <input type="radio" class="inline" name="mood" value="Bro Dying." />
+          Bro. Dying.
+        </label>
+        <button id="submitFeelings" type="button">Submit Feelings</button>
+      </fieldset>
+    </form>
+    <div id="output">
+      <p id="myCurrentFeelings">My current feelings are:</p>
+      <span id="myFeelings" class="default-mood mood">*void of feelings*</span>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
